@@ -80,6 +80,7 @@ script:
 
 after_success:
   - codecov -F backend
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
 
 # Who to notify about build results
 notifications:
